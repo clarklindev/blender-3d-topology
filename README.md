@@ -46,3 +46,10 @@
 - on the second simple deform -> set origin by select the new (second) empty created
 - axis -> z
 - angle 360
+
+## 08 applying texture
+- add new material -> base color (dot button) -> image texture -> ./assets/worldColor.jpg
+- object -> shade smooth
+- resize mountain heights -> displace modifier -> size 10
+
+![08-applying-texture-adding-image-texture.png](./08-applying-texture-adding-image-texture.png)
