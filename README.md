@@ -53,3 +53,10 @@
 - resize mountain heights -> displace modifier -> size 10
 
 ![08-applying-texture-adding-image-texture.png](./08-applying-texture-adding-image-texture.png)
+
+## 09 Experiment with Renderer Colours and ApplyUndo Modifiers
+- Specular reflection occurs when light rays bounce off a smooth surface at a specific angle. 
+- with plane selected -> material properties -> specular (remove) -> becomes less reflective shiny
+- thing with applying modifiers is you can then play with vertices BUT if you dont need to mod, then you should leave modifiers un-applied
+
+![09-experiment-with-renderer-colours-remove-specular](./09-experiment-with-renderer-colours-remove-specular.png)
