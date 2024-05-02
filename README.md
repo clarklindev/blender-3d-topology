@@ -21,3 +21,17 @@
 ## 05 - add second subdivision surface modifier
 - add another subdivision surface modifier
 - move it above the displacement modifier
+
+## 06 - simple deform modifier
+- change shape into sphere
+- front view -> rotate: x 90
+- add modifier -> simple deform -> need to set axis origin
+- move cursor: shift + s -> cursor to grid
+- create an empty: shift + a -> empty -> plain axes
+- on the simple deform -> set axis origin ot the empty
+- simple deform -> select "bend" 
+-> set angle 180
+- FIX: need to fix the displacement texture -> image -> settings -> mapping -> "extend" (was "repeat")
+
+![06-simple-deform-modifier-textures-tab-view](./06-simple-deform-modifier.png)
+![06-simple-deform-modifier-modifiers-tab-view](./06-simple-deform-modifier_2.png)
