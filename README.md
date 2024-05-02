@@ -27,11 +27,22 @@
 - front view -> rotate: x 90
 - add modifier -> simple deform -> need to set axis origin
 - move cursor: shift + s -> cursor to grid
+- note: ensure empty is at 0,0,0 for x,y,z
 - create an empty: shift + a -> empty -> plain axes
-- on the simple deform -> set axis origin ot the empty
+- on the simple deform -> set axis (x) 
+- set origin -> empty
 - simple deform -> select "bend" 
 -> set angle 180
 - FIX: need to fix the displacement texture -> image -> settings -> mapping -> "extend" (was "repeat")
 
 ![06-simple-deform-modifier-textures-tab-view](./06-simple-deform-modifier.png)
 ![06-simple-deform-modifier-modifiers-tab-view](./06-simple-deform-modifier_2.png)
+
+## 07 - second simple deform modifier
+- add another simple deform
+- move cursor: shift + s -> cursor to grid
+- add another empty
+- note: ensure empty is at 0,0,0 for x,y,z
+- on the second simple deform -> set origin by select the new (second) empty created
+- axis -> z
+- angle 360
