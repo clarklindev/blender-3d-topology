@@ -60,3 +60,10 @@
 - thing with applying modifiers is you can then play with vertices BUT if you dont need to mod, then you should leave modifiers un-applied
 
 ![09-experiment-with-renderer-colours-remove-specular](./09-experiment-with-renderer-colours-remove-specular.png)
+
+## 10 exporting / sharing the model 
+- you can share an export of the model 
+- export -> wavefront .obj 
+- make sure apply modifiers is selected
+- it exports a single object with the modifiers applied
+- when you import this model, it will be a single object and wont have any modifiers attached
