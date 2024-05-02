@@ -67,3 +67,15 @@
 - make sure apply modifiers is selected
 - it exports a single object with the modifiers applied
 - when you import this model, it will be a single object and wont have any modifiers attached
+
+## 11 using-the-uv-editor-to-add-a-moon-texture
+- create a new material -> color (round button next to color) -> image texture -> add ./assets/moon-texture.jpg
+- edit mode -> select the plane -> 3d viewport top menu
+- then in uv editor (it will show the bounds of the plane)
+- in material editor -> assign -> moon
+- the idea is that you only need to create a new material then with the uv editor select all and in the material editor assign the moon texture
+
+## 12 moon-heightmap
+- update displacement map for moon (texture properties) -> load moon heightmap -> refresh button 
+
+![moon](./12-moon.png)
