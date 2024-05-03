@@ -79,3 +79,44 @@
 - update displacement map for moon (texture properties) -> load moon heightmap -> refresh button 
 
 ![moon](./12-moon.png)
+
+## 13 Ocean data - Adding GEBCO Bathymetry Information
+- data for the oceans (https://www.gebco.net/data_and_products/gridded_bathymetry_data/)
+- NOTE: gebco info maps also include elevation data
+- The GEBCO (*General Bathymetric Chart of the Oceans) is a publicly available bathymetric chart of the world's oceans
+- can also Download data for user-defined areas - Use their application to select and download data in netCDF, Esri ASCII raster and data GeoTiff formats.
+- https://sbcode.net/topoearth/
+
+downloadable:
+Blue Marble 5400x2700 (https://sbcode.net/topoearth/blue-marble-texture-5400x2700/)
+Blue Marble 10800x5400
+Blue Marble 21600x10800
+Blue Marble 86400x43200
+SRTM Heightmap 5400x2700 (https://sbcode.net/topoearth/srtm-heightmap/)
+Gebco Heightmap 5400x2700 (https://sbcode.net/topoearth/gebco-heightmap-5400x2700/)
+(./assets/gebco_bathy.5400x2700_8bit.jpg)
+(./assets/gebco_bathy.5400x2700_16bit.tif)
+
+Gebco Heightmap 10800x5400
+Gebco Heightmap 21600x10800
+Moon Texture
+Moon Heightmap
+
+- NOTE: 8bit Gebco Heightmap (.jpg) vs 16bit Gebco Heightmap (.tif) 
+- modifiers -> displace -> texture -> new texture -> image (the first input on interface) -> pick file -> 8bit gebco
+- 8bit means all height info have 256 possible values
+- explained highest point eg 8000m lowest point 8000m -> height difference 16000m and you only have 256 values to represent this meaning 1 value represents 16000/256 = 62.5meter
+- 16bit means 65536 possible values = 16000 / 65536 = 0.24meters per value
+
+#### saving 16bit color images
+- note: when saving, make sure to select 16bit-color depth if the image source is 16bit
+- in modifiers -> the second subdivision modifier -> update levels to 6 for viewport and render
+
+#### observations
+- visually inspecting an 8bit image source render vs 16bit image source render of the earth - there is not much difference except for 8x file size of the 16bit render
+
+##### 8bit render
+![8bit](./13-gebco-bathymetry-information-8bit.png)
+
+##### 16bit render
+![16bit](./13-gebco-bathymetry-information-16bit.png)
