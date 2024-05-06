@@ -222,7 +222,6 @@ transforms could possibly look like:
 ![sphere-quarters-progress](./14-using-higher-resolution-textures-and-heightmaps-sphere-quarters-progress.png)
 
 #### now use the 10800 x 5400 texture
-- NOTE: computer struggles to render 3x 5400 x 2700 image mesh even in eevee
 
 ![14-using-higher-resolution-textures-and-heightmaps-10800x5400.png](./14-using-higher-resolution-textures-and-heightmaps-10800x5400.png)
 
@@ -252,12 +251,17 @@ transforms could possibly look like:
 - set tile location positions in object mode
 - do the same for the height maps
 
-### transforms
+#### transforms
 - transformations: Tile Locations | (X,Y,Z) | Rotation (X,Y,Z) | Scale (X,Y,Z):  
     - Top Left | 0, 0, 90 | 90, 0, 0 | 180, 90, 1  
     - Top Right | 360, 0, 90 | 90, 0, 0 | 180, 90, 1  
     - Bottom Left | 0, 0, -90	| 90, 0, 0	| 180, 90, 1  
     - Bottom Right | 360, 0, -90 | 90, 0, 0 | 180, 90, 1  
+
+#### render:
+- NOTE: computer struggles to render 3x 5400 x 2700 image mesh even in eevee
+- here is the render result for earth (top-left) only:
+![14-using-higher-resolution-textures-and-heightmaps-render-earth-quater-top-left.png](14-using-higher-resolution-textures-and-heightmaps-render-earth-quater-top-left.png)
 
 ## 15 Using 1 Pixel per Minute Textures and Zooming with the UV Editor
 - still referencing 2x empty objects (positioned 0,0,0)
